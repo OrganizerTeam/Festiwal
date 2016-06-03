@@ -182,6 +182,12 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\img\header-bg.png" />
+    <Content Include="Content\img\lefthand.png" />
+    <Content Include="Content\img\righthand.png" />
+    <Content Include="Content\img\slide5.jpg" />
+    <Content Include="Content\img\White-Background-9B1.jpg" />
+    <Content Include="Content\img\WP_20160428_16_05_14_Pro.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
