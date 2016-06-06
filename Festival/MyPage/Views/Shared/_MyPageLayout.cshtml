@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "_MyPageLayout";
+}
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    @RenderSection("scripts", required: false)
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script src="~/Scripts/modernizr-2.6.2.min.js"></script>
+    <title>Kacper Werema - .NET Developer</title>
+    <script type="text/javascript" src="/Scripts/jquery-2.2.3.min.js"></script>
+    <script>
+        $(document)
+            .ready(function() {
+                $("a[href*='#']")
+                    .each(function() {
+                        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+                            location.hostname === this.hostname &&
+                            this.hash.replace(/#/, '')) {
+                            var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) + ']');
+                            var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+                            if ($target) {
+                                var targetOffset = $target.offset().top;
+
+                                $(this)
+                                    .click(function() {
+                                        $("#nav ul li a").removeClass("active");
+                                        $(this).addClass('active');
+                                        $('html, body').animate({ scrollTop: targetOffset }, 600);
+                                        return false;
+                                    });
+                            }
+                        }
+                    });
+
+            });
+    </script>
+
+</head>
+<body>
+@RenderBody()
+<script>
+// Get the modal
+    var modal = document.getElementById('myModal');
+
+// Get the <span> element that closes the modal
+    var spaan = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+    spaan.onclick = function() {
+        modal.style.display = "none";
+    }
+
+// Get all images and insert the clicked image inside the modal
+// Get the content of the image description and insert it inside the modal image caption
+    var images = document.getElementsByTagName('img');
+    var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    var i;
+    //Zmien i jezeli dodasz zdjecie
+    for (i = 9; i < (images.length - 1); i++) {
+        images[i].onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+            captionText.innerHTML = this.nextElementSibling.innerHTML;
+        }
+    }
+</script>
+</body>
+</html>
