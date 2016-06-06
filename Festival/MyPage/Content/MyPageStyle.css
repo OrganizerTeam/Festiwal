@@ -15,7 +15,14 @@ margin: 0;
 padding: 0;
 width: 100%;
 }
-h1 {
+h1, h2, h3, h4, h5, h6 {
+    margin: 30px 0;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/*h1 {
 font-family:"Arvo";
 font-weight:normal;
 font-size: 55px;
@@ -37,19 +44,18 @@ font-weight: normal;
 font-size: 16px;
 text-align: center;
 padding: 0;
-}
+}*/
 
-#nav { width: 200px; float: none; margin-top: 20px;position: relative;}
+#nav {position: relative; text-transform: uppercase}
 
 #nav ul{
-list-style: none;
+list-style:none;
 display: block;
 margin: 0 auto;
-list-style: none;
 }
 #nav li{
-margin-top: 50px;
-float:none;
+    margin-right: 50px;
+float:right;
 }
 #nav li a {
     color: #fff;
@@ -67,12 +73,11 @@ float:none;
 }
 
 #header {
-    width: 250px;
+    width: 100%;
     background: url('img/header-bg.png');
-    height: 100%;
+    height: 30px;
     position :fixed;
     z-index: 100;
-    margin-left: 1%;
     text-align: center;
 }
 
@@ -128,87 +133,27 @@ div.img {
     text-align: center;
 }
 
-.ButtonCV {
-	-moz-box-shadow:inset 0px 0px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 0px 0px 0px #ffffff;
-	box-shadow:inset 0px 0px 0px 0px #ffffff;
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9));
-	background:-moz-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-	background:-webkit-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-	background:-o-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-	background:-ms-linear-gradient(top, #f9f9f9 5%, #e9e9e9 100%);
-	background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9',GradientType=0);
-	background-color:#f9f9f9;
-	-moz-border-radius:11px;
-	-webkit-border-radius:11px;
-	border-radius:11px;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	font-weight:bold;
-	padding:7px 23px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
-    margin-right: auto;
-    margin-left: auto;
-}
-.ButtonCV:hover {
-	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9));
-	background:-moz-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-	background:-webkit-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-	background:-o-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-	background:-ms-linear-gradient(top, #e9e9e9 5%, #f9f9f9 100%);
-	background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9',GradientType=0);
-	background-color:#e9e9e9;
-        margin-right: auto;
-    margin-left: auto;
-}
-.ButtonCV:active {
-	position:relative;
-	top:1px;
-        margin-right: auto;
-    margin-left: auto;
-}
 
 div.desc {
     padding: 15px;
     text-align: center;
 }
 
-#feature #featurebottom .footer #video #video-footer{ background: url("img/grid.png");
-                                           z-index: 100;
-}
 
-#feature {
-    background: url("img/twarz.gif") no-repeat center center;
-    height: 420px;
-    background-size: 75%;
-    margin-top: -10px;
-    z-index: 16;
+.intro {
+    background: url("img/elewacja.jpg") no-repeat bottom center scroll;
+    display: table;
+    width: 100%;
+    height: 200px;
+    padding: 400px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #2c3e50;
+        background-size: cover;
 }
-
-.leftHand{
-    position: absolute;
-    left: 180px;
-    top: 363px;
-    z-index: 20;
-    width: 220px;
-    height: auto;
+.brand-heading {
+    font-size: 40px;
 }
-.rightHand {
-    right: 180px;
-        top: 363px;
-    position: absolute;
-    z-index: 20;
-    width: 220px;
-    height: auto;
-}
-
 #Start {
     border-top: 1px solid #eaeaea;
     top: 300px;
@@ -229,7 +174,7 @@ div.desc {
 
 
 #Projects {
-    height: 500px;
+    height: 1200px;
     text-align: center;
     width: 100%;
     padding: 170px 0 0 0;
@@ -250,149 +195,6 @@ div.desc {
     height: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 9997;
-}
-
-#mainwrapper2 {
-  height: auto;
-    position:absolute;
-  margin: 50px 0 0 150px;
-}
-#mainwrapper2 .box{
-    border: 5px solid #fff;
-    cursor: pointer;
-    height: 277px;
-    width: 370px;
-    float: left;
-    margin: 5px;
-    position: relative;
-    overflow: hidden;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    -moz-box-shadow: 1px 1px 1px 1px #ccc;
-    box-shadow: 1px 1px 1px 1px #ccc;
-}
- 
-#mainwrapper2 .box img{
-    position: absolute;
-    left: 0;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-}
-#mainwrapper2 .box .caption{
-    background-color: #c33;
-    position: absolute;
-    color: #fff;
-    z-index: 100;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-    left: 0;
-}
-
-#mainwrapper2 #box-2.box .rotate-caption{
-    width: 277px;
-    height: 370px;
-    top: 277px;
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
- 
-#mainwrapper2 .box .rotate{
-    width: 600px;
-    height: 600px;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-}
-    #mainwrapper2 .box:hover .rotate{
-    background-color: #c33 !important;
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
-    /*Wrapper SportStore*/
-#mainwrapper {
-  height: auto;
-    position:absolute;
-  margin: 50px 0 0 650px;
-}
-#mainwrapper .box{
-    border: 5px solid #fff;
-    cursor: pointer;
-    height: 277px;
-    width: 370px;
-    float: left;
-    margin: 5px;
-    position: relative;
-    overflow: hidden;
-    -webkit-box-shadow: 1px 1px 1px 1px #ccc;
-    -moz-box-shadow: 1px 1px 1px 1px #ccc;
-    box-shadow: 1px 1px 1px 1px #ccc;
-}
- 
-#mainwrapper .box img{
-    position: absolute;
-    left: 0;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-}
-#mainwrapper .box .caption{
-    background-color: #c33;
-    position: absolute;
-    color: #fff;
-    z-index: 100;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-    left: 0;
-}
-
-.rotate-caption {
-    margin-left: 277px;
-    text-align: center;
-}
-.rotateh3{
-    padding-top: 100px;
-}
-#mainwrapper #box-1.box .rotate-caption{
-    width: 277px;
-    height: 370px;
-    top: 277px;
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
- 
-#mainwrapper .box .rotate{
-    width: 600px;
-    height: 600px;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-}
-    #mainwrapper .box:hover .rotate{
-    background-color: #c33 !important;
-    -moz-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    -webkit-transform: rotate(-180deg);
-    transform: rotate(-180deg);
 }
 
 .SportsStoreButton{
@@ -568,18 +370,4 @@ div.gallery {
     margin-right: auto;
     width: 50%;
     font-family: "Open Sans", sans-serif;
-}
-#Bottom {
-    position: relative;
-    overflow: hidden;
-    height: 550px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: white;
-}
-img.bottomimg {
-    margin-top: -420px;
-    width: 100%;
-    padding-right: 100px;
-    position: absolute;
 }

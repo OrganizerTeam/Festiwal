@@ -1,42 +1,67 @@
 ﻿<body>
     <!----- HEADER START--->
     <!----- SLIDES START --->
-    <header id="header">
-        <nav id="nav">
-            <ul>
-                <li><a href="#Start" class="active" title="Next Section"><i class="fa fa-home fa-3x" aria-hidden="true"></i><br />START</a></li>
-                <li><a href="#Technology" title="Next Section"><i class="fa fa-cogs fa-3x" aria-hidden="true"></i><br />TECHNOLOGIA</a></li>
-                <li><a href="#Projects" title="Next Section"><i class="fa fa-lightbulb-o fa-3x" aria-hidden="true"></i><br />PROJEKTY</a></li>
-                <li><a href="#AfterHours" title="Next Section"><i class="fa fa-paper-plane fa-3x" aria-hidden="true"></i><br />PO GODZINACH</a></li>
-                <li><a href="#Contact" title="Next Section"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i><br />KONTAKT</a></li>
-            </ul>
-        </nav>
-    </header>
+<header id="header">
+    <nav id="nav">
+        <ul>
+            <li><a href="#Start" class="active" title="Next Section">Festiwal</a></li>
+            @*<li><a href="#Technology" title="Next Section">Newsy</a></li>*@
+            <li><a href="#Projects" title="Next Section">Jurorzy</a></li>
+            <li><a href="#AfterHours" title="Next Section">Sponsorzy</a></li>
+            <li><a href="#Contact" title="Next Section">KONTAKT</a></li>
+        </ul>
+    </nav>
+</header>
+<section class="intro">
+    <div class="intro-body">
+        <div class="container">
+            
+            <div class="row">
+                
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading">Nazwa Festiwalu</h1>
+                    <p class="intro-text">Festiwal dla dziennikarzy.</p>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+</section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="feature" id="feature"></div>
-                <div class="noise">
-                    <div id="Start">
-                        <img class="leftHand" src="/Content/img/lefthand.png" alt="Left Hand" />
-                        <img class="rightHand" src="/Content/img/righthand.png" alt="Right Hand" />
-                        <div>
-                            <h2 class="TechHead" style="margin-top: 100px">Kacper werema</h2>
-                            <p class="TechLower">Krótko o mnie</p>
-                        </div>
-                        <div class="opis">
-                            <p>Jestem pasjonatem aplikacji Webowych.</p>
-                            <p>
-                                Zajmuję się budowaniem stron internetowych opartych o <br />najnowsze trendy technologiczne.
-                                Obecnie szukam płatnego stażu lub pierwszej pracy jako junior .net developer. Możliwa relokacja jest przedmiotem negocjacji.
-                            </p>
-                            <p>
-                                Więcej informacji w <a href="/Content/CVENG.pdf" target="_blank" class="ButtonCV">CV</a>
-                            </p>
+            <div class="noise">
 
+                <div id="Start">
+                    <div>
+                        <h2 class="TechHead" style="margin-top: 100px">Festiwal</h2>
+                        <p class="TechLower">Krótko o festiwalu</p>
+                    </div>
+                    <div class="opis">
+                        <div class="col-md-3">
+                            <p>
+                                Jeśli masz do
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>
+                                Jeśli masz do
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>
+                                Jeśli masz do
+                            </p>
+                        </div>
+                        <div class="col-md-3">
+                            <p>
+                                Jeśli masz do
+                            </p>
                         </div>
                     </div>
-                    <div id="Technology" style="top: -50px">
+                </div>
+                <div class="col-md-12">
+                    @*<div id="Technology" style="top: -50px">
                         <h2 class="TechHead">TECHNOLOGIE</h2>
                         <p class="TechLower">CO POTRAFIĘ</p>
                         <div class="img">
@@ -54,38 +79,67 @@
                         <div class="img">
                             <img src="/Content/img/rsz_netlogo.png" alt="Logo ASP.NET" width="120" height="120">
                         </div>
-                    </div>
+                    </div>*@
                     <div id="Projects">
-                        <h2 class="TechHead">PROJEKTY</h2>
-                        <p class="TechLower">Jak to się robi</p>
-                        <div id="mainwrapper">
-                            <div id="box-1" class="box">
-                                <div class="rotate">
-                                    <img id="image-1" src="/Content/img/sports-store.jpg" />
-                                    <span class="caption rotate-caption">
-                                        <h3 class="rotateh3">Sport Store</h3>
-                                        <p class="rotatep">Sports Store jest to pierwsza aplikacja zrobiona przeze mnie.</p>
-                                        <a href="https://github.com/snowpl/SportsStore" target="_blank" class="ButtonCV" title="Zobacz apkę!">VIEW PROJECT</a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="mainwrapper2">
-                            <div id="box-2" class="box">
-                                <div class="rotate">
-                                    <img src="/Content/img/google_cardboard_kit.jpg" width="370" height="277" />
-                                    <span class="caption rotate-caption">
-                                        <h3 class="rotateh3">Hello World VR</h3>
-                                        <p class="rotatep">Hello World VR jest to nasz projekt robiony podczas Hackatlonu PiastCode.</p>
-                                        <a href="https://github.com/Code4FunTeam/PiastCode" target="_blank" class="ButtonCV" title="Zobacz apkę!">VIEW PROJECT</a>
-                                    </span>
+                        <h2 class="TechHead">Jurorzy</h2>
+                        <p class="TechLower">Niedlugo poznacie jury.</p>
+                        <div class="jury" id="paddingOwl">
+                            <div class="gpad">
+                                <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
+                                    <div class="owl-wrapper" style="width: 23100px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d()">
+                                        <div class="owl-item" style="height: 600px">
+                                            <div class="owl-item" style="height: 361px">
+                                                <div class="item">
+                                                    <a class="cboxElement" data-lightbox="multi">
+                                                        <img src="/Content/img/juror1.png" alt="Juror1"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="height: 600px">
+                                            <div class="owl-item" style="height: 361px">
+                                                <div class="item">
+                                                    <a class="cboxElement" data-lightbox="multi">
+                                                        <img src="/Content/img/juror2.png" alt="Juror1"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="height: 600px">
+                                            <div class="owl-item" style="height: 361px">
+                                                <div class="item">
+                                                    <a class="cboxElement" data-lightbox="multi">
+                                                        <img src="/Content/img/juror3.png" alt="Juror1"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="height: 600px">
+                                            <div class="owl-item" style="height: 361px">
+                                                <div class="item">
+                                                    <a class="cboxElement" data-lightbox="multi">
+                                                        <img src="/Content/img/juror4.png" alt="Juror1"/>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="owl-item" style="height: 600px">
+                                            <div class="owl-item" style="height: 361px">
+                                                <div class="item">
+                                                    <a class="cboxElement" data-lightbox="multi">
+                                                        <img src="/Content/img/juror5.png" alt="Juror1" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="AfterHours">
-                        <h2 class="TechHead">PO GODZINACH</h2>
-                        <p class="TechLower">Hobby</p>
+                        <h2 class="TechHead">Sponsorzy</h2>
+                        <p class="TechLower">Lista sponsorow szybko sie zapelnia</p>
                         <div class="responsive">
                             <div class="gallery">
                                 <img src="/Content/img/decha.JPG" alt="Snowboard" width="300" height="200">
@@ -107,7 +161,6 @@
                             </div>
                         </div>
                         <div class="clearfix"></div>
-
                         <!-- The Modal -->
                         <div id="myModal" class="modal">
                             <span class="close">×</span>
@@ -125,9 +178,6 @@
                         </p>
                         <p class="contactPhone">+48 791 771 587</p>
                         <p class="contactEmail">kacper.werema@gmail.com</p>
-                    </div>
-                    <div id="Bottom">
-                        <img class="bottomimg" src="~/Content/img/nogi.gif" alt="nogi" width="1725" height="970" />
                     </div>
                 </div>
             </div>
