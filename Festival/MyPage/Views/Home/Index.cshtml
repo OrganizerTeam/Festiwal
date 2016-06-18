@@ -1,67 +1,81 @@
-﻿<body>
-    <!----- HEADER START--->
-    <!----- SLIDES START --->
-<header id="header">
-    <nav id="nav">
-        <ul>
-            <li><a href="#Start" class="active" title="Next Section">Festiwal</a></li>
-            @*<li><a href="#Technology" title="Next Section">Newsy</a></li>*@
-            <li><a href="#Projects" title="Next Section">Jurorzy</a></li>
-            <li><a href="#AfterHours" title="Next Section">Sponsorzy</a></li>
-            <li><a href="#Contact" title="Next Section">KONTAKT</a></li>
-        </ul>
-    </nav>
-</header>
+﻿@{ 
+    ViewBag.Title = "Festiwal dziennikarzy";
+}
+
 <section class="intro">
     <div class="intro-body">
         <div class="container">
-            
             <div class="row">
-                
                 <div class="col-md-8 col-md-offset-2">
                     <h1 class="brand-heading">Nazwa Festiwalu</h1>
                     <p class="intro-text">Festiwal dla dziennikarzy.</p>
                 </div>
-                
             </div>
-            
         </div>
     </div>
 </section>
-    <div class="container">
-        <div class="row">
-            <div class="noise">
 
-                <div id="Start">
-                    <div>
-                        <h2 class="TechHead" style="margin-top: 100px">Festiwal</h2>
-                        <p class="TechLower">Krótko o festiwalu</p>
+<div class="container">
+    <div class="row">
+        <div class="noise">
+            <div id="News">
+                <div>
+                    <h2 class="TechHead" style="margin-top: 100px">Festiwal</h2>
+                    <p class="TechLower">Newsy</p>
+                </div>
+                <div class="opis">
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
                     </div>
-                    <div class="opis">
-                        <div class="col-md-3">
-                            <p>
-                                Jeśli masz do
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <p>
-                                Jeśli masz do
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <p>
-                                Jeśli masz do
-                            </p>
-                        </div>
-                        <div class="col-md-3">
-                            <p>
-                                Jeśli masz do
-                            </p>
-                        </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-12">
-                    @*<div id="Technology" style="top: -50px">
+            </div>
+            <div id="Festival">
+                <div>
+                    <h2 class="TechHead" style="margin-top: 100px">Festiwal</h2>
+                    <p class="TechLower">Krótko o festiwalu</p>
+                </div>
+                <div class="opis">
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <p>
+                            Jeśli masz do
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                @*<div id="Technology" style="top: -50px">
                         <h2 class="TechHead">TECHNOLOGIE</h2>
                         <p class="TechLower">CO POTRAFIĘ</p>
                         <div class="img">
@@ -80,109 +94,93 @@
                             <img src="/Content/img/rsz_netlogo.png" alt="Logo ASP.NET" width="120" height="120">
                         </div>
                     </div>*@
-                    <div id="Projects">
-                        <h2 class="TechHead">Jurorzy</h2>
-                        <p class="TechLower">Niedlugo poznacie jury.</p>
-                        <div class="jury" id="paddingOwl">
-                            <div class="gpad">
-                                <div id="owl-demo" class="owl-carousel owl-theme" style="opacity: 1; display: block;">
-                                    <div class="owl-wrapper" style="width: 23100px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d()">
-                                        <div class="owl-item" style="height: 600px">
-                                            <div class="owl-item" style="height: 361px">
-                                                <div class="item">
-                                                    <a class="cboxElement" data-lightbox="multi">
-                                                        <img src="/Content/img/juror1.png" alt="Juror1"/>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item" style="height: 600px">
-                                            <div class="owl-item" style="height: 361px">
-                                                <div class="item">
-                                                    <a class="cboxElement" data-lightbox="multi">
-                                                        <img src="/Content/img/juror2.png" alt="Juror1"/>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item" style="height: 600px">
-                                            <div class="owl-item" style="height: 361px">
-                                                <div class="item">
-                                                    <a class="cboxElement" data-lightbox="multi">
-                                                        <img src="/Content/img/juror3.png" alt="Juror1"/>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item" style="height: 600px">
-                                            <div class="owl-item" style="height: 361px">
-                                                <div class="item">
-                                                    <a class="cboxElement" data-lightbox="multi">
-                                                        <img src="/Content/img/juror4.png" alt="Juror1"/>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="owl-item" style="height: 600px">
-                                            <div class="owl-item" style="height: 361px">
-                                                <div class="item">
-                                                    <a class="cboxElement" data-lightbox="multi">
-                                                        <img src="/Content/img/juror5.png" alt="Juror1" />
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="AfterHours">
-                        <h2 class="TechHead">Sponsorzy</h2>
-                        <p class="TechLower">Lista sponsorow szybko sie zapelnia</p>
-                        <div class="responsive">
-                            <div class="gallery">
-                                <img src="/Content/img/decha.JPG" alt="Snowboard" width="300" height="200">
-                            </div>
-                        </div>
-                        <div class="responsive">
-                            <div class="gallery">
-                                <img src="/Content/img/fota2.JPG" alt="Nagrywanie" width="300" height="200">
-                            </div>
-                        </div>
-                        <div class="responsive">
-                            <div class="gallery">
-                                <img src="/Content/img/decha3.JPG" alt="Snowboard" width="300" height="200">
-                            </div>
-                        </div>
-                        <div class="responsive">
-                            <div class="gallery">
-                                <img src="/Content/img/fota3.JPG" alt="Nagrywanie" width="300" height="200">
-                            </div>
-                        </div>
-                        <div class="clearfix"></div>
-                        <!-- The Modal -->
-                        <div id="myModal" class="modal">
-                            <span class="close">×</span>
-                            <img class="modal-content" id="img01">
-                            <div id="caption"></div>
-                        </div>
+                <div id="Jury">
+                    <h2 class="TechHead">Jurorzy</h2>
+                    <p class="TechLower">Niedlugo poznacie jury</p>
+                </div>
 
-                    </div>
-                    <div id="Contact">
-                        <h2 class="TechHead">KONTAKT</h2>
-                        <p class="TechLower">Odezwij się</p>
-                        <p class="contactDescription">
-                            Jeśli masz do mnie pytanie lub chciałbyś nawiązać współpracę skontaktuj się
-                            korzystając z podanych niżej danych <s>lub formularza</s>.
-                        </p>
-                        <p class="contactPhone">+48 791 771 587</p>
-                        <p class="contactEmail">kacper.werema@gmail.com</p>
+                <div class="jury" id="slider">
+                    @*<div id="mainwrapper">*@
+                        <div class="box">
+                            <img class="jurorzy" src="/Content/img/juror1.png" height="590" />
+                            <span class="caption fade-caption">
+                                <h3>Juror 1</h3>
+                                <p>Ten juror zostanie przedstawiony 01.07.2016.</p>
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img class="jurorzy" src="/Content/img/juror2.png" height="590" />
+                            <span class="caption fade-caption">
+                                <h3>Juror 2</h3>
+                                <p>Ten juror zostanie przedstawiony 04.07.2016.</p>
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img class="jurorzy" src="/Content/img/juror3.png" height="590" />
+                            <span class="caption fade-caption">
+                                <h3>Juror 3</h3>
+                                <p>Ten juror zostanie przedstawiony 10.07.2016.</p>
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img class="jurorzy" src="/Content/img/juror4.png" height="590" />
+                            <span class="caption fade-caption">
+                                <h3>Juror 4</h3>
+                                <p>Ten juror zostanie przedstawiony 18.07.2016.</p>
+                            </span>
+                        </div>
+                        <div class="box">
+                            <img class="jurorzy" src="/Content/img/juror1.png" height="590" />
+                            <span class="caption fade-caption">
+                                <h3>Juror 5</h3>
+                                <p>Ten juror zostanie przedstawiony 25.07.2016.</p>
+                            </span>
+                        </div>
+                    @*</div>*@
+                </div>
+            </div>
+            <div id="Sponsors">
+                <h2 class="TechHead">Sponsorzy</h2>
+                <p class="TechLower">Lista sponsorow szybko sie zapelnia</p>
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="/Content/img/sponsor.JPG" alt="Snowboard" width="300" height="200">
                     </div>
                 </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="/Content/img/sponsor.JPG" alt="Nagrywanie" width="300" height="200">
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="/Content/img/sponsor.JPG" alt="Snowboard" width="300" height="200">
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                        <img src="/Content/img/sponsor.JPG" alt="Nagrywanie" width="300" height="200">
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <span class="close">×</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+
+            </div>
+            <div id="Contact">
+                <h2 class="TechHead">KONTAKT</h2>
+                <p class="TechLower">Odezwij się</p>
+                <p class="contactDescription">
+                    Jeśli masz do mnie pytanie lub chciałbyś nawiązać współpracę skontaktuj się
+                    korzystając z podanych niżej danych <s>lub formularza</s>.
+                </p>
+                <p class="contactPhone">+48 791 771 587</p>
+                <p class="contactEmail">kacper.werema@gmail.com</p>
             </div>
         </div>
     </div>
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-</body>
+</div>

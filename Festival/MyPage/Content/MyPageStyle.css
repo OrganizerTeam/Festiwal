@@ -46,7 +46,9 @@ text-align: center;
 padding: 0;
 }*/
 
-#nav {position: relative; text-transform: uppercase}
+/*Stary header*/
+
+/*#nav {position: relative; text-transform: uppercase}
 
 #nav ul{
 list-style:none;
@@ -79,7 +81,81 @@ float:right;
     position :fixed;
     z-index: 100;
     text-align: center;
+}*/
+
+/*Nowy header*/
+
+.navbar {
+	margin-bottom: 0;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	text-transform: uppercase;
+	font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color: #000;
 }
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-brand:focus {
+    outline: 0;
+}
+/*kolor tekstu*/
+.navbar-custom a {
+    color: #ffffff;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+/*co sie stanie jak najedziemy*/
+.navbar-custom .nav li a:hover{
+    color: #ffffff;
+    outline: 0;
+    background-color: rgba(255,255,255,.2);
+    }
+.navbar-custom .nav li a:focus,
+
+.navbar-custom .nav li.active {
+    color: #3e0202;
+    font: bold;
+    background-color: rgba(255,255,255,.2);
+}
+
+.navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.navbar-toggle:focus,
+.navbar-toggle:active {
+    outline: 0;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+        background: url('img/header-bg.png');;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        border-bottom: 1px solid rgba(255,255,255,.3);
+    }
+}
+/*koniec menu*/
 
 .opis{  animation: 0.5s start-slide-up2 0.9s backwards paused;
     color: #626262;
@@ -154,7 +230,8 @@ div.desc {
 .brand-heading {
     font-size: 40px;
 }
-#Start {
+
+#News {
     border-top: 1px solid #eaeaea;
     top: 300px;
     height: 500px;
@@ -163,7 +240,16 @@ div.desc {
     z-index: 6;
 }
 
-#Technology {
+#Festival {
+    border-top: 1px solid #eaeaea;
+    top: 300px;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    z-index: 6;
+}
+
+#Jury {
   box-sizing: border-box;
     height: 400px;
     padding-top: 80px;
@@ -173,7 +259,7 @@ div.desc {
   text-align: center;}
 
 
-#Projects {
+#Sponsors {
     height: 1200px;
     text-align: center;
     width: 100%;
@@ -206,11 +292,11 @@ div.desc {
     padding: 5px 10px;
     border: 2px solid #fff;}
 
-#AfterHours{
+/*#Sponsorzy{
 color: #333333;
 height: 550px;
 padding: 150px 0;
-}
+}*/
 
 
 div.gallery {
